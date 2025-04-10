@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../../../../../../PTGDUD/BT/bttuan5/src/layouts/MainLayout";
-import Dashboard from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Dashboard";
-import Analytics from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Analytics";
-import Integrations from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Integrations";
-import Messages from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Messsages";
-import Projects from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Projects";
-import Teams from "../../../../../../PTGDUD/BT/bttuan5/src/pages/Teams";
+import MainLayout from "../layouts/MainLayout";
+import Dashboard from "../pages/Dashboard";
+import Analytics from "../pages/Analytics";
+import Integrations from "../pages/Integrations";
+import Messages from "../pages/Messsages";
+import Projects from "../pages/Projects";
+import Teams from "../pages/Teams";
 
 
 export default function AppRoutes() {
