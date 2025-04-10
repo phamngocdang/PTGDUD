@@ -1,5 +1,5 @@
 
-
+import DataTable from "../components/DataTable";
 export default function Dashboard() {
   return (
     <div className="space-y-6">
@@ -35,7 +35,7 @@ export default function Dashboard() {
           <p className="text-green-600 text-sm mt-1">▲ 6.84% period of change</p>
         </div>
       </section>
-
+      <DataTable />
         <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
             <span>63 results</span>
 
