@@ -6,7 +6,7 @@ const statusColor = {
   "Completed": "bg-green-100 text-green-600",
 };
 
-
+const API_URL = "http://localhost:3001/users";
 
 export default function DataTable() {
   const [data, setData] = useState([]);
@@ -132,26 +132,7 @@ export default function DataTable() {
         </table>
       </div>
 
-      {modalOpen && (
-        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg w-full max-w-md space-y-4">
-            <h3 className="text-lg font-bold">{isEdit ? "Edit User" : "Add User"}</h3>
-            <input type="text" placeholder="Name" className="input w-full" value={selected.name} onChange={(e) => setSelected({ ...selected, name: e.target.value })} />
-            <input type="text" placeholder="Company" className="input w-full" value={selected.company} onChange={(e) => setSelected({ ...selected, company: e.target.value })} />
-            <input type="number" placeholder="Value" className="input w-full" value={selected.value} onChange={(e) => setSelected({ ...selected, value: e.target.value })} />
-            <input type="text" placeholder="Date" className="input w-full" value={selected.date} onChange={(e) => setSelected({ ...selected, date: e.target.value })} />
-            <select value={selected.status} className="input w-full" onChange={(e) => setSelected({ ...selected, status: e.target.value })}>
-              <option value="New">New</option>
-              <option value="In-progress">In-progress</option>
-              <option value="Completed">Completed</option>
-            </select>
-            <div className="flex justify-end space-x-2">
-              <button onClick={() => setModalOpen(false)} className="px-4 py-2 rounded bg-gray-200">Cancel</button>
-              <button onClick={handleSave} className="px-4 py-2 rounded bg-pink-500 text-white">Save</button>
-            </div>
-          </div>
-        </div>
-      )}
+     
     </div>
   );
 }
